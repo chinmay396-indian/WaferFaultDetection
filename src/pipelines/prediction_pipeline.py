@@ -76,6 +76,8 @@ class PredictionPipeline:
             predicted_target_df = pd.DataFrame(predicted_target)
             self.get_predicted_dataframe(predicted_target_df=predicted_target_df, prediction_path= prediction_path)
 
+            return self.prediction_pipeine_config
+
 
         except Exception as e:
             raise CustomException(e, sys)
